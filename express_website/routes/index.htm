@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Node JS Implementation</title>
+</head>
+<body bgcolor="#D3D3D3" fontcolor = "white">
+
+<p>Here we go. So I created a node js server. The following is what I did</p>
+<ol>
+<li>I created a node js server by importing the http modules</li>
+<li>I then used the http module object to create the server using the createServer. Easy enough.</li>
+<li>I then extracted the apthname from the request.url.</li>
+<li>I then checked if the url has the requested path name or not.</li>
+<li>If the URl did not have the requested resource, I threw an error, in the non blocking code that gets called.</li>
+<li>Now all I need to do, create an html file and access it from the url and check if it is working or now.</li>
+</ol>
+
+<p>funny thing is this is that file</p>
+
+<p>Okay. So after quite some time I was able to access the html page from the browser</p>
+<p>Here is what I was doing wrong:</p>
+<p>I did not add a statement that will write the data that was sent to the function parameter as a string. So I had to add the missing statement. Which was <strong>write.(data.toString();</strong> </p>
+
+
+
+<p>AND... here is something else I did wrong:</p>
+<p>I incorreclty defined the text/html type of the content type.</p>
+<p>I put in <strong>{'Content-Type':'plain/text'}</strong> which is very wrong</p>
+<p>I then corrected it to <strong>{'Content-Type':'text/html'}</strong></p>
+
+<p>So....mistakes were made. Lessons were learned. No more making these same mistakes again.</p>
+
+<p>Aso I was thinking of moving all of this to an online journal or something. Kinda like <i>word press</i> or something. I'm hoping this will turn out to be some kind of portfolio or something in the future. It would be really cool</p>
+
+<p>I should probably research where can I blog about all this and choose which posts will be private and which ones won't.</p>
+
+</body>
+</html>
